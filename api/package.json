@@ -1,0 +1,54 @@
+{
+  "name": "townhouseapi",
+  "version": "1.0.0",
+  "description": "api",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -r esm app/modules/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development nodemon app/modules/server.js",
+    "homolog": "cross-env NODE_ENV=homolog nodemon app/modules/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/townhouse/api.git"
+  },
+  "author": "Rafael Medeiros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/townhouse/api/issues"
+  },
+  "homepage": "https://gitlab.com/townhouse/api#README",
+  "dependencies": {
+    "aws-sdk": "^2.609.0",
+    "axios": "^0.18.0",
+    "bcrypt": "^4.0.0",
+    "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "esm": "^3.0.84",
+    "express": "^4.16.4",
+    "jwt-simple": "^0.5.5",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "mysql2": "^1.6.4",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "pg": "^7.6.1",
+    "pg-hstore": "^2.3.2",
+    "request-promise": "^4.2.2",
+    "sequelize": "4.41.2"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.10.2",
+    "eslint-plugin-jsx-a11y": "^1.5.5",
+    "eslint-plugin-react": "^5.2.2",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.7",
+    "sequelize-cli": "^5.3.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "password",
+    "database": "townhouse_db",
+    "host": "localhost",
+    "dialect": "postgres",
+    "operatorsAliases": "false",
+    "configName": "node-auth"
+  },
+  "homolog": {
+    "username": "rafaowns15",
+    "password": "password",
+    "database": "townhouse",
+    "host": "townhouse.ccr70w0e1kssdo1.us-east-1.rds.amazonaws.com",
+    "dialect": "postgres",
+    "operatorsAliases": "false",
+    "configName": "node-auth"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
